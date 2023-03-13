@@ -7,7 +7,11 @@ ENV CGO_ENABLED=${CGO}
 
 # --- Installing tools ---
 RUN apt update && apt upgrade -y
-RUN apt install -y git wget gcc libc6-dev
+RUN apt install -y \
+git \
+wget \
+gcc \
+libc6-dev
 
 # --- Installing Go ---
 RUN wget https://go.dev/dl/go1.20.2.linux-amd64.tar.gz
