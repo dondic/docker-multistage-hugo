@@ -20,7 +20,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: donatasdicmanas/private-repo
-        tags: v1, latest
+        tags: hugo-alpine-1.0
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
